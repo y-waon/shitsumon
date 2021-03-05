@@ -1,0 +1,21 @@
+<%= render "shared/header" %>
+
+<%# 商品の概要 %>
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name">
+      <%= @post.title %>
+    </h2>
+
+    <div class="item-img-content">
+      <%= image_tag @post.image ,class:"item-box-img" %>
+    </div>
+     
+    <h2 class="name">
+      質問本文
+    </h2>
+    <div class="item-explain-box">
+      <span><%= @post.text %></span>
+    </div>
+  </div>
+</div>

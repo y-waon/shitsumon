@@ -1,0 +1,27 @@
+.item-show{
+  overflow: scroll;
+  height: 100vh;
+}
+
+.name{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-bottom: solid red;
+}
+
+.item-img-content{
+  text-align: center;
+  margin: 20px;
+}
+
+.item-explain-box{
+  width: 80px;
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  font-size: 20px;
+}
