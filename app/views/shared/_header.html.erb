@@ -2,8 +2,8 @@
 <header class='top-page-header'>
   <div class='nav'>
     <ul class='lists-left'>
-      <li><%= link_to 'SHITSMON', root_path, method: :delete, class: "logo" %></li>
-      <li><%= link_to '新規質問', destroy_user_session_path, method: :delete, class: "logo" %></li>
+      <li><%= link_to 'SHITSMON', root_path, class: "logo" %></li>
+      <li><%= link_to '新規質問', new_post_path, class: "logo" %></li>
     </ul>
     <ul class='lists-right'>
     <% if user_signed_in? %>
