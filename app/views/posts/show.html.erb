@@ -7,6 +7,14 @@
       <%= @post.title %>
     </h2>
 
+  <% if user_signed_in? || current_user.id == @post.user_id %>
+  <div class="dc">
+    <%= link_to "質問の編集", edit_post_path, method: :get, class: "item-red-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "質問の削除", post_path, method: :delete, class:"item-destroy" %>
+  </div>
+  <% end %>
+
     <div class="item-img-content">
       <%= image_tag @post.image ,class:"item-box-img" %>
     </div>
