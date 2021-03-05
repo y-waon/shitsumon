@@ -1,7 +1,25 @@
 <%= render "shared/header" %>
+
 <div class='main'>
-  <div class='post-content'>
-    <ul class='post-lists'>
+  <div class='item-contents'>
+    <h2 class='sintaku'>新着質問</h2>
+    <ul class='item-lists'>
+      <% @posts.each do |post| %>
+        <li class='list'>
+        <%= link_to post_path(post.id) do %>
+        <div class='item-img-all'>
+          <div class='item-img-content'>
+            <%= image_tag post.image, class: "item-img" %>
+          </div>
+          <div class='item-info'>
+            <h3 class='item-name'>
+              <%= post.title %>
+            </h3>
+          </div>
+        </div>
+        <% end %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </div>
