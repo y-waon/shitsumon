@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
       @post = Post.find(params[:post_id])
       @comment = Comment.new
       @comments = @post.comments.includes(:user)
-      render 'post/show'
+      render 'posts/show'
     end
   end
 
