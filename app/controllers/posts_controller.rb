@@ -48,7 +48,7 @@ class PostsController < ApplicationController
   end
 
   def move_to_index
-    if @post.present? || current_user.id != @post.user_id
+    if current_user.id != @post.user_id
       redirect_to action: :index
     end
   end

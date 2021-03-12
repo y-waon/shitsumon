@@ -11,18 +11,26 @@
   border-bottom: solid red;
 }
 
+.names{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
 .item-img-content{
   text-align: center;
   margin-top: 40px;
 }
 
 .item-explain-box{
-  width: 80px;
+  width: 80%;
   margin-top: 20px;
   margin-left: 300px;
   margin-right: 300px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
 }
 
@@ -64,4 +72,15 @@
 .itiran{
   text-align: center;
   font-size: 25px;
+}
+
+.span{
+  width: 80%;
+}
+
+.image-tag{
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 80vh
 }
