@@ -42,12 +42,14 @@
     <ul class="comments_lists">
       <li class="itiran">コメント一覧</li>
     <% @comments.each do |comment| %>
-      <li class="comments_list">
-        <%= comment.text %>
-      </li>
-      <li class="comments_list">
-        投稿者  <%= comment.user.user_name %>
-      </li>
+      <div class="comments_lists">
+        <li class="comments_list">
+          <%= comment.text %>
+        </li>
+        <li class="commentts_list">
+          投稿者  <%= comment.user.user_name %>
+        </li>
+      </div>
     <% end %>
     </ul>
   </div>

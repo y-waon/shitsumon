@@ -62,16 +62,27 @@
   padding: 10px;
   border: solid red;
 }
+.comments_lists{
+  margin-left: 250px;
+  margin-right: 250px;
+}
 
 .comments_list{
   text-align: center;
   font-size: 20px;
   margin-top: 20px;
 }
+.commentts_list{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  border-bottom: solid black;
+}
 
 .itiran{
   text-align: center;
   font-size: 25px;
+  border-bottom: solid black;
 }
 
 .span{
@@ -82,5 +93,5 @@
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  width: 80vh
+  width: 80vh;
 }
